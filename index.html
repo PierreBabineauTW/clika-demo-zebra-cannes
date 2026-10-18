@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zebra Pizza Cannes — Pizzeria 61 Bd de la République</title>
+<meta name="description" content="Zebra Pizza, pizzeria italienne et napolitaine au 61 Boulevard de la République à Cannes. Sur place, à emporter ou en livraison. Commandez au 04 93 68 44 75.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14110F">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Zebra Pizza",
+  "servesCuisine": ["Pizza", "Italienne"],
+  "telephone": "+33493684475",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "61 Boulevard de la République",
+    "addressLocality": "Cannes",
+    "postalCode": "06400",
+    "addressCountry": "FR"
+  },
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": {
+      "@type": "MenuSection",
+      "name": "Pizzas",
+      "hasMenuItem": [
+        {"@type": "MenuItem", "name": "Margherita", "offers": {"@type": "Offer", "price": "15.90", "priceCurrency": "EUR"}},
+        {"@type": "MenuItem", "name": "Boursin", "offers": {"@type": "Offer", "price": "18.50", "priceCurrency": "EUR"}},
+        {"@type": "MenuItem", "name": "Hannibal", "offers": {"@type": "Offer", "price": "18.90", "priceCurrency": "EUR"}},
+        {"@type": "MenuItem", "name": "Pepperoni", "offers": {"@type": "Offer", "price": "17.90", "priceCurrency": "EUR"}},
+        {"@type": "MenuItem", "name": "Tartufo", "offers": {"@type": "Offer", "price": "18.50", "priceCurrency": "EUR"}},
+        {"@type": "MenuItem", "name": "Zebra Pro Max", "offers": {"@type": "Offer", "price": "19.50", "priceCurrency": "EUR"}}
+      ]
+    }
+  }
+}
+</script>
+<style>
+:root{--noir:#14110F;--creme:#F7F1E5;--rouge:#C1272D;--vert:#1E6B3A;--sable:#E8D9BE;--radius:18px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--noir);color:var(--creme);line-height:1.6;overflow-x:hidden}
+h1,h2,.disp{font-family:Georgia,'Times New Roman',serif;font-weight:700;letter-spacing:-.01em}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.concept{background:#000;color:#FFD166;text-align:center;font-size:12px;padding:7px 10px;letter-spacing:.04em;font-weight:600}
+header{position:sticky;top:0;z-index:50;background:rgba(20,17,15,.96);backdrop-filter:blur(8px);border-bottom:3px solid var(--rouge)}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 20px;max-width:1060px;margin:0 auto}
+.logo{font-family:Georgia,serif;font-weight:700;font-size:20px;letter-spacing:.02em;color:var(--creme);text-decoration:none;white-space:nowrap}
+.logo span{background:var(--creme);color:var(--noir);padding:1px 8px;border-radius:6px;margin-left:6px;font-size:14px;letter-spacing:.14em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px;transition:transform .2s;border:2px solid transparent;cursor:pointer;white-space:nowrap}
+.btn-rouge{background:var(--rouge);color:#fff}
+.btn-vert{background:var(--vert);color:#fff}
+.btn-creme{background:transparent;color:var(--creme);border-color:var(--creme)}
+.btn:hover{transform:translateY(-2px)}
+.btn-sm{padding:9px 16px;font-size:14px}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:56px 20px 44px;max-width:1060px;margin:0 auto}
+@media(max-width:840px){.hero{grid-template-columns:1fr;padding-top:32px}}
+.kicker{display:inline-block;background:var(--vert);color:#fff;font-weight:700;font-size:13px;padding:6px 14px;border-radius:999px;margin-bottom:16px}
+.hero h1{font-size:clamp(40px,6.2vw,72px);line-height:1.02}
+.hero h1 em{color:var(--rouge);font-style:normal}
+.hero .sub{font-size:clamp(17px,2.2vw,21px);margin:14px 0 6px;opacity:.92}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.badge{border:1px solid rgba(247,241,229,.35);padding:7px 13px;border-radius:99px;font-size:13px;background:rgba(247,241,229,.07)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.hero-img img{display:block;width:100%;height:500px;object-fit:cover;border-radius:24px;border:4px solid var(--creme);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+@media(max-width:840px){.hero-img img{height:320px}}
+.band{background:var(--rouge);color:#fff;overflow:hidden;white-space:nowrap;padding:11px 0;font-weight:800;font-size:15px;letter-spacing:.05em}
+.band div{display:inline-block;animation:sc 24s linear infinite}
+@media (prefers-reduced-motion:reduce){.band div{animation:none}}
+@keyframes sc{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+section{padding:60px 0}
+.sec-title{font-size:clamp(30px,4.5vw,48px);margin-bottom:6px}
+.sec-sub{opacity:.82;font-size:17px;margin-bottom:26px}
+.pizzas{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(max-width:700px){.pizzas{grid-template-columns:1fr}}
+.pizza{background:var(--creme);color:var(--noir);border-radius:var(--radius);padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.pizza h3{font-size:19px;font-family:Georgia,serif}
+.pizza .price{font-family:Georgia,serif;font-weight:700;font-size:20px;color:var(--rouge);white-space:nowrap}
+.note{font-size:13px;opacity:.7;margin-top:12px}
+.direct{background:var(--creme);color:var(--noir);border-radius:24px;padding:30px;margin-top:30px}
+.direct h2{font-size:clamp(24px,3.4vw,34px)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+@media(max-width:700px){.steps{grid-template-columns:1fr}.direct{padding:22px}}
+.step{background:#fff;border-radius:14px;padding:16px;text-align:center;border:2px solid var(--sable)}
+.step b{font-size:32px;color:var(--rouge);display:block;font-family:Georgia,serif}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.infos{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:840px){.infos{grid-template-columns:1fr}}
+.card{background:#221D19;border:1px solid rgba(247,241,229,.15);border-radius:var(--radius);padding:26px}
+.card h3{margin-bottom:12px;font-size:21px;font-family:Georgia,serif}
+.card ul{list-style:none;display:grid;gap:8px;margin-bottom:16px}
+.card li{padding-left:22px;position:relative}
+.card li:before{content:'';position:absolute;left:0;top:.62em;width:10px;height:10px;border-radius:50%;background:var(--rouge)}
+footer{border-top:1px solid rgba(247,241,229,.15);padding:32px 0;font-size:14px;opacity:.9}
+footer a{color:var(--creme)}
+.sticky-mobile{display:none}
+@media(max-width:840px){.sticky-mobile{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#0C0A08;padding:10px 10px calc(10px + env(safe-area-inset-bottom));gap:8px;border-top:3px solid var(--rouge)}.sticky-mobile .btn{flex:1}body{padding-bottom:72px}}
+@media(max-width:430px){.topbar .btn-creme{display:none}.logo{font-size:17px}}
+a:focus-visible,button:focus-visible{outline:3px solid #FFD166;outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="concept">Maquette concept CLIKA pour Zebra Pizza — pas le site officiel de l'établissement</div>
+<header><div class="topbar">
+<a class="logo" href="#top">ZEBRA<span>PIZZA</span></a>
+<div style="display:flex;gap:8px">
+<a class="btn btn-creme btn-sm" href="tel:+33493684475">04 93 68 44 75</a>
+<a class="btn btn-rouge btn-sm" href="#commander">Commander</a>
+</div></div></header>
+
+<div class="hero" id="top"><div>
+<div class="kicker">PIZZERIA · CANNES</div>
+<h1>Pizza italienne &amp; napolitaine, <em>à Cannes.</em></h1>
+<p class="sub">Sur place, à emporter ou en livraison, au 61 Boulevard de la République. Commandez en direct par téléphone.</p>
+<div class="badges">
+<div class="badge">Sur place</div>
+<div class="badge">À emporter</div>
+<div class="badge">Livraison</div>
+<div class="badge">61 Bd de la République</div>
+</div>
+<div class="hero-ctas">
+<a class="btn btn-rouge" href="#carte">Voir la carte</a>
+<a class="btn btn-vert" href="tel:+33493684475">Commander : 04 93 68 44 75</a>
+</div></div>
+<div class="hero-img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Pizza napolitaine sortie du four (visuel d'ambiance)" width="1000" height="1000"></div>
+</div>
+
+<div class="band" aria-hidden="true"><div>MARGHERITA • BOURSIN • HANNIBAL • PEPPERONI • TARTUFO • ZEBRA PRO MAX • MARGHERITA • BOURSIN • HANNIBAL • PEPPERONI • TARTUFO • ZEBRA PRO MAX •&nbsp;</div></div>
+
+<section id="carte"><div class="wrap">
+<h2 class="sec-title">La carte</h2>
+<p class="sec-sub">Une sélection de nos pizzas.</p>
+<div class="pizzas">
+<div class="pizza"><h3>Margherita</h3><span class="price">15,90 €</span></div>
+<div class="pizza"><h3>Boursin</h3><span class="price">18,50 €</span></div>
+<div class="pizza"><h3>Hannibal</h3><span class="price">18,90 €</span></div>
+<div class="pizza"><h3>Pepperoni</h3><span class="price">17,90 €</span></div>
+<div class="pizza"><h3>Tartufo</h3><span class="price">18,50 €</span></div>
+<div class="pizza"><h3>Zebra Pro Max</h3><span class="price">19,50 €</span></div>
+</div>
+<p class="note">Prix relevés sur la carte Uber Eats de Zebra Pizza (septembre 2026).</p>
+<div class="direct" id="commander">
+<h2 class="disp">Commandez en direct</h2>
+<div class="steps"><div class="step"><b>1</b>J'appelle le 04 93 68 44 75</div><div class="step"><b>2</b>Je choisis mes pizzas</div><div class="step"><b>3</b>Sur place, à emporter ou en livraison</div></div>
+<div class="row"><a class="btn btn-vert" href="tel:+33493684475">Appeler le 04 93 68 44 75</a><a class="btn btn-rouge" href="https://www.ubereats.com/fr-en/store/zebra-pizza/dHLQca-yQuaouctudF9_Xg" target="_blank" rel="noopener">Voir sur Uber Eats</a></div>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap infos">
+<div class="card"><h3>Nous trouver</h3><p><b>Zebra Pizza</b><br>61 Boulevard de la République<br>06400 Cannes</p><br><a class="btn btn-rouge btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Zebra%20Pizza%2061%20Boulevard%20de%20la%20R%C3%A9publique%2006400%20Cannes" target="_blank" rel="noopener">Itinéraire</a></div>
+<div class="card"><h3>Nos services</h3><ul><li>Sur place</li><li>À emporter</li><li>Livraison</li></ul><a class="btn btn-vert btn-sm" href="tel:+33493684475">Appeler</a></div>
+</div></section>
+
+<footer><div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+<div><b>ZEBRA PIZZA — CANNES</b><br>Pizzeria italienne et napolitaine, 61 Boulevard de la République, 06400 Cannes.</div>
+<div>Maquette concept CLIKA réalisée à partir d'informations publiques (Uber Eats, PagesJaunes).<br>Photo : visuel d'ambiance Unsplash. Pas le site officiel.</div>
+</div></footer>
+
+<div class="sticky-mobile">
+<a class="btn btn-rouge btn-sm" href="tel:+33493684475">Appeler</a>
+<a class="btn btn-creme btn-sm" href="#carte">Carte</a>
+</div>
+</body></html>
